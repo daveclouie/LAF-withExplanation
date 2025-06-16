@@ -1,0 +1,258 @@
+/* SIGNUP PAGE CSS ONLY */
+
+/* Reset default styles and set base font */
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Set full height and prevent scrolling on body */
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #1d1d1d;
+  overflow: hidden;
+}
+
+/* Main container layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #bdbdbd;
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Header styling */
+.header {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Header logo image */
+.header img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Header title */
+.header h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Main content area layout */
+.main {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 30px;
+  overflow: auto;
+}
+
+/* Main content image styling */
+.main img {
+  max-width: 600px;
+  max-height: 50vh;
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Registration form container */
+.register-box {
+  background-color: #d9d9d9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Registration form title */
+.register-box h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+/* Form label styling */
+.register-box label {
+  align-self: flex-start;
+  font-size: 14px;
+  margin: 5px 0 2px;
+}
+
+/* Form input field styling */
+.register-box input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Password input container for toggle icon */
+.input-box {
+  position: relative;
+  width: 100%;
+}
+
+/* Password visibility toggle icon */
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #333;
+  font-size: 1em;
+}
+
+/* Submit button styling */
+.register-box button {
+  padding: 8px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+  background-color: #4a4a4a;
+  color: white;
+  font-weight: bold;
+}
+
+/* Button hover effect */
+.register-box button:hover {
+  background-color: #333;
+}
+
+/* Login redirect link styling */
+.login-redirect {
+  font-size: 12px;
+  margin-top: 8px;
+  color: #333;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Footer container layout */
+.footer {
+  background-color: #2c2c2c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+/* Footer section base styling */
+.footer-left, .footer-center, .footer-right {
+  font-size: 11px;
+}
+
+/* Left footer section with logo */
+.footer-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Center footer section */
+.footer-center {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Right footer section */
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+/* Footer logo image */
+.footer-left img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Social media icons */
+.social-icons img {
+  width: 18px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/* Social icons container */
+.social-icons {
+  margin-top: 3px;
+}
+
+/* Email link styling */
+.email {
+  color: #add8e6;
+  text-decoration: underline;
+}
+
+/* Status message container */
+.status-message {
+  display: none;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+/* Error message styling */
+.status-message.error {
+  color: red;
+}
+
+/* Success message styling */
+.status-message.success {
+  color: green;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  /* Adjust main content layout for mobile */
+  .main {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Adjust image size for mobile */
+  .main img {
+    max-height: 30vh;
+  }
+
+  /* Adjust footer layout for mobile */
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  /* Adjust footer text size for mobile */
+  .footer-left, .footer-center, .footer-right {
+    text-align: center;
+    font-size: 10px;
+  }
+}
